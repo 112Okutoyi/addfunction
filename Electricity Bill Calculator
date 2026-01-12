@@ -1,0 +1,20 @@
+def calculate_bill(units):
+    if units<=50:
+        bill=units*20
+    elif units<=150:
+        bill=(50*20)+(units-50)*25
+    else:
+        bill=(50*20)+(100*25)+(units-150)*30
+        return bill
+def usage_remark(bill):
+        if bill>=10000:
+          return"High Usage"
+        else:
+            return"Normal Usage"
+units=int(input("Enter units consumed:"))
+bill=calculate_bill(units)
+remark=usage_remark(bill)
+
+print("Total Bill(KES):",bill)
+print("Remark:",remark)
+
