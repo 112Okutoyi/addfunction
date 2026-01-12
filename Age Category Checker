@@ -1,0 +1,17 @@
+from datetime import datetime
+def get_age_category(age):
+    if age<=12:
+        return"Child"
+    elif age<=19:
+        return"Teenager"
+    elif age <=59:
+        return"Adult"
+    else:
+        return"Senior Citizen"
+year_of_birth=int(input("Enter year of birth:"))
+current_year=datetime.now().year
+age=current_year-year_of_birth
+category=get_age_category(age)
+
+print("Age:",age)
+print("category:",category)
