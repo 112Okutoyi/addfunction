@@ -1,0 +1,15 @@
+def get_grade(marks):
+    if marks >=70:
+        return"A","Excellent"
+    elif marks>=60:
+        return"B","Very Good"
+    elif marks >=50:
+        return"C","Good"
+    elif marks>=40:
+        return "D","Pass"
+    else:
+        return"F","Fail"
+marks=int(input("Enter marks(0-100):"))
+grade,remark=get_grade(marks)
+print("Grade:",grade)
+print("Remark:",remark)
